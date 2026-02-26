@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <a href="dashboard.html">Dashboard</a><a href="tasks.html">Tasks</a>
+            <a href="courses.html">Courses</a><a href="profile.html">Profile</a>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="container" style="display: flex; justify-content: center;">
+        <div class="card" style="width: 400px; text-align: center;">
+            <h2>Profile</h2>
+            <p style="margin-bottom:10px; color:#666;">Update Username</p>
+            <form id="profileForm">
+                <input type="text" id="usernameInput" required>
+                <button type="submit">Update</button>
+            </form>
+            <p id="profileSuccess" style="color: #00c853; margin-top: 12px; display: none; font-weight: 600;">
+                Username updated successfully!
+            </p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

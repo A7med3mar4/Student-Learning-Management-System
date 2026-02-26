@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Dashboard</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="courses.html">Courses</a>
+            <a href="profile.html">Profile</a>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="container grid-2">
+        <div>
+            <div class="card">
+                <h2>Clock</h2>
+                <h1 id="clock" style="color: #3b5998;">Loading...</h1>
+            </div>
+            <div class="card">
+                <h2>Announcements</h2>
+                <p id="announcementText" style="margin-bottom: 15px; font-size: 18px;"></p>
+                <button id="nextAnnouncement">Next</button>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Statistics</h2>
+            <p>Total Tasks: <span id="statTotalTasks"></span></p>
+            <p>Completed: <span id="statCompletedTasks"></span></p>
+            <p>Pending: <span id="statPendingTasks"></span></p>
+            <p>Courses: <span id="statTotalCourses"></span></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Courses</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="dashboard.html">Dashboard</a><a href="tasks.html">Tasks</a>
+            <a href="courses.html">Courses</a><a href="profile.html">Profile</a>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="container grid-2">
+        <div class="card">
+            <h2>Courses Page (Add)</h2>
+            <form id="addCourseForm">
+                <input type="text" id="courseName" placeholder="Course Name" required>
+                <input type="text" id="courseInstructor" placeholder="Instructor" required>
+                <button type="submit">Add Course</button>
+            </form>
+        </div>
+        <div class="card">
+            <h2>Courses</h2>
+            <div id="courseList"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

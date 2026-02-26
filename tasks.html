@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Tasks</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="dashboard.html">Dashboard</a><a href="tasks.html">Tasks</a>
+            <a href="courses.html">Courses</a><a href="profile.html">Profile</a>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>Add Task</h2>
+            <form id="addTaskForm" class="flex-row">
+                <input type="text" id="taskTitle" placeholder="Title" required>
+                <input type="date" id="taskDate" required>
+                <select id="taskPriority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+            <div class="flex-row">
+                <input type="text" id="searchInput" placeholder="Search tasks...">
+                <select id="sortSelect">
+                    <option value="">Sort By...</option>
+                    <option value="priority">Priority</option>
+                    <option value="date">Date</option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Tasks List</h2>
+            <div id="taskList"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
