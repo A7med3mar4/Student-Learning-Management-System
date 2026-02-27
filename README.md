@@ -44,27 +44,6 @@ The project simulates a real LMS dashboard with authentication, courses, tasks, 
 - Browser Local Storage
 
 ---
-
-## Project Structure
-
-Student-LMS/
-
-├── index.html        # Login page
-├── profile.html      # User profile page
-├── dashboard.html    # Main LMS dashboard
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   ├── auth.js       # Login & validation logic
-│   ├── profile.js    # Profile update logic
-│   ├── tasks.js      # Tasks management
-│   └── courses.js    # Courses management
-│
-└── README.md
-
----
 ## Author
 - Ahmed Omar
 
