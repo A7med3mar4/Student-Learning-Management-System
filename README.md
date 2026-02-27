@@ -63,6 +63,6 @@ Student-LMS/
 └── README.md
 
 ---
-##Author
--Ahmed Omar
+## Author
+- Ahmed Omar
 
