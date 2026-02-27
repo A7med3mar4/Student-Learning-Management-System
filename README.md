@@ -46,19 +46,21 @@ The project simulates a real LMS dashboard with authentication, courses, tasks, 
 ---
 
 ## Project Structure
+
 Student-LMS/
-├──index.tml
-├── login.html
-├── dashboard.html
-├── profile.html
-├── courses.html
-├── tasks.html
+
+├── index.html        # Login page
+├── profile.html      # User profile page
+├── dashboard.html    # Main LMS dashboard
 │
 ├── css/
-│ └── style.css
+│   └── style.css
 │
 ├── js/
-│ └── script.js
+│   ├── auth.js       # Login & validation logic
+│   ├── profile.js    # Profile update logic
+│   ├── tasks.js      # Tasks management
+│   └── courses.js    # Courses management
 │
 └── README.md
 
